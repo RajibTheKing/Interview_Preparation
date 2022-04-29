@@ -2,7 +2,7 @@
     - [Basic tutorial and implementation of all important algorithms](https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/tutorial/)
 
 - Practice Problems
-    - Count Bits in a Number
+    - [Count Bits in a Number](https://github.com/RajibTheKing/Job_Interview_Preparation/blob/master/Practice_Problems/CountingBitsInNumber_Optimized.cpp)
 
 - Advanced C++ (We must master atleast one specific language):
     - Type Casting
