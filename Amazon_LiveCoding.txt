@@ -1,0 +1,104 @@
+/*
+A town is represented by m x n 2d grid map of 0s and 1s. 1 means house and 0 means empty land. 
+
+A community is surrounded by empty lands and is formed by connecting adjacent houses horizontally or vertically. 
+You may assume all four edges of the grid are all surrounded by empty lands.
+
+Now you need to distribute covid-19 vaccines to each community by sending a nurse to that community. 
+One nurse can cover only one community to avoid spreading virus. 
+How many nurses will you need in total to cover this town?
+
+
+Input: town = [
+  ["1","1","1","1","0"],
+  ["1","1","0","1","0"],
+  ["1","1","0","0","0"],
+  ["0","0","0","0","0"]
+]
+Output: 1
+
+Input: town = [
+  ["1","1","0","0","1"],
+  ["1","1","0","0","0"],
+  ["0","0","1","0","0"],
+  ["0","0","0","1","1"]
+]
+Output: 4
+*/
+
+//constraints: 
+//1<=m<=100
+//1<=n<=100
+
+//O(mxn) + o(mxn)
+
+void BFS(int i, int j, vector<vector<string>> &town){
+    queue<int> Q;
+    Q.push(i);
+    Q.push(j);
+    
+    while(!Q.empty()){
+        int x = Q.front(); q.pop();
+        int y = Q.front(); q.pop();
+        town[x][y] = "0";
+        
+        if(x+1 < town.size())
+        {
+            // [x+1][y]
+            if(town[x+1][y] == "1"){
+                Q.push(x+1);
+                Q.push(y);
+            }
+            
+        }
+        
+        if(y+1 < town[x].size()){
+            // [x][y+1]
+            if(town[x][y+1] == "1"){
+                Q.push(x);
+                Q.push(y+1);
+            }
+        }
+        
+        if(x-1 >= 0){
+            //[x-1][y]
+            if(town[x-1][y] == "1"){
+                Q.push(x-1);
+                Q.push(y);
+            }
+        }
+        
+        
+        if(y-1 >= 0){
+            // [x][y-1]
+            if(town[x][y-1] == "1"){
+                Q.push(x);
+                Q.push(y-1);
+            }
+        }
+        
+        
+    }
+    
+    
+}
+
+int getNursesNeeded(vector<vector<string>> town){
+    
+    int communityCount = 0;
+    
+    for(int i=0; i<town.size(); i++){
+        
+        for(int j=0; j<town[i].size(); j++){
+            
+            if(town[i][j] == "1"){
+                BFS(i, j, town);
+                communityCount++;
+            }
+            
+        }
+        
+    }
+    
+    return communityCount;
+}

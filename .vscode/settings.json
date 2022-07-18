@@ -3,6 +3,11 @@
         "set": "cpp",
         "iosfwd": "cpp",
         "ostream": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "thread": "cpp",
+        "chrono": "cpp",
+        "mutex": "cpp"
     }
 }
