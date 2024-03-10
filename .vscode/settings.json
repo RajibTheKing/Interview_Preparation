@@ -8,6 +8,8 @@
         "exception": "cpp",
         "thread": "cpp",
         "chrono": "cpp",
-        "mutex": "cpp"
+        "mutex": "cpp",
+        "xutility": "cpp",
+        "algorithm": "cpp"
     }
 }

@@ -49,16 +49,20 @@
 	-> Applied through Linkedin
 	
 8. Miro (Full Stack Engineer)
-	-> Applied through Linkedin 
+	-> Applied through Linkedin
+	-> Applied 30th May, 2022
+	-> Applied 22nd June, 2022
+	-> Appplied 18th July, 2022
 
 9. TUI
-	-> Applied through Linkedin
+	-> Applied through Linkedin, 31st May, 2022
 	-> pass: n54)n,B/Fh6&9Ab
 	
 10. ZeissGroup
 	-> https://zeissgroup.wd3.myworkdayjobs.com/en-US/External/userHome
-	-> Applied
-	
+	-> Role: Backend Software Engineer
+	-> Applied: 1st June, 2022
+	-> Rejected: 10 June, 2022 	
 
 11. EA sports
 	-> https://ea.gr8people.com/index.gp?method=cappPortal.showActivityThankYou&opportunityid=173843&syslayoutid=227&actionWorkflowId=539767&SMID=1000725
@@ -67,34 +71,35 @@
 	-> Rejected
 	
 12. Revolut
-	-> Applied
-	-> Rejected
+	-> Applied: 31st May, 2022
+	-> Rejected: 2nd June, 2022
 	
 13. GMV
 	-> Applied
 	
 14. New Relic
-	-> Applied 
-	-> Rejected
+	-> Role: Full-Stack Engineer
+	-> Applied: 31st May, 2022
+	-> Rejected: 9th June, 2022
 	
 15. T-Systems Multimedia Solutions
-	-> Applied
-	-> Rejected 
+	-> Applied: 29th May, 2022
+	-> Rejected : 7th June, 2022
 	
 16. Momox (Full Stack Engineer)
-	-> Applied
-	-> Rejected
+	-> Applied: 9th June, 2022
+	-> Rejected: 10th June, 2022
 	
 17. N26
-	-> Applied
-	-> Rejected
+	-> Applied: 9th June, 2022
+	-> Rejected: 20th June, 2022
 	
 18. Rewe (Java Software Engineer)
-	-> Applied
-	-> Rejected
+	-> Applied: 10th June, 2022
+	-> Rejected: 17th June, 2022
 	
 19. Bolt (Senior Software Engineer)
-	-> Applied
+	-> Applied: 10th June, 2022
 	-> PS Interview on Tue Jul 5, 2022 10:30am – 11am
 	-> July 6th, Maiia Lakovleva transfered my Application for Full-Stack
 	-> 12 days no corresponding Email from Bolt.
@@ -102,8 +107,8 @@
 	
 	
 20. Twilio (Software Engineer)
-	-> Applied
-	-> Rejected
+	-> Applied: 10th June, 2022
+	-> Rejected: 14th June, 2022
 	
 21. Modis
 	-> Recruter knocked me 
@@ -190,10 +195,49 @@
 38. BCG Digital Ventures
 	-> Role: Fullstack Engineer 
 	-> Applied: 18th July, 2022
+	-> Rejected: 19th July, 2022
 	
-
+39. Amadeus FiRe
+	-> Role: C++ Softwareentwickler / Software Developer (m/w/d)
+	-> Applied: 18th July, 2022
 	
+40. Trendyol Group
+	-> Role: Software Engineer 
+	-> Applied: 19th July, 2022
+	
+41. SmartClip
+	-> Role: Software Engineer (C++)
+	-> Applied: 19th July, 2022
 
+42. Veeva Systems
+	-> Role: Software Engineer (Java)
+	-> Applied: 20th July, 2022
+
+43. Flatiron Health
+	-> Role: Software Engineer 
+	-> Applied: 20th July, 2022
+	-> Rejected: 21st July, 2022
+
+44. LuxSoft
+	-> Role: C++ Software Engineer
+	-> Applied: 20th July, 2022
+	
+45. Spendesk
+	-> Role: Software Engineer
+	-> Applied: 21st July, 2022
+	
+46. Rasa
+	-> Role: Software Engineer
+	-> Applied: 21st July, 2022
+
+47. Datadog
+	-> Role: Software Engineer
+	-> Applied: 21st July, 2022
+
+48. Zenjob
+	-> Role: Full Stack Engineer
+	-> Applied: 22nd June, 2022
+	-> Rejected: 4th July, 2022
 
 
 	

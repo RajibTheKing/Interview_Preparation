@@ -1,0 +1,138 @@
+https://coliru.stacked-crooked.com/
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <sstream>
+using namespace std;
+
+#define releasemode 0
+
+template<typename T>
+std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec)
+{
+    for (auto& el : vec)
+    {
+        os << el << ' ';
+    }
+    return os;
+}
+
+
+vector<string> printNumbers(int range){
+    
+    vector<string> ret;
+    
+    for(int i = 1; i <= range; i++){
+        string str = "";
+        stringstream ss;
+        ss<<i;
+        ss>>str;
+        
+        if(i % 3 == 0 || i % 5 == 0){
+            str+=" ";
+        }
+        
+        if(i % 3 == 0){
+            str+= "smart";
+        }
+        
+        if(i % 5 == 0){
+            str+= "clip";
+        }
+        ret.push_back(str);
+    }
+    return ret;
+}
+
+bool Test_printNumbers(){
+    int samepleParams = 6;
+    vector<string> expected;
+    expected.push_back("1");
+    expected.push_back("2");
+    expected.push_back("3 smart");
+    expected.push_back("4");
+    expected.push_back("5 clip");
+    expected.push_back("6 smart");
+    
+    vector<string> actual = printNumbers(samepleParams);
+    
+    if(actual.size() != expected.size()) return false;
+    for(unsigned int i=0; i<expected.size(); i++)
+    {
+        if(actual[i] != expected[i])
+        {
+            return false;
+        }
+    }
+    
+    return true;
+    
+}
+
+int main()
+{
+    // std::vector<std::string> vec = {
+    //     "Hello", "from", "GCC", __VERSION__, "!" 
+    // };
+    // std::cout << vec << std::endl;
+    
+    vector<string> ret = printNumbers(100);
+    
+    #if releasemode
+    for(auto x: ret)
+    {
+        cout<<x<<endl;
+    }
+    #else
+    //testing
+    
+    int result = Test_printNumbers();
+    if(result){
+        cout<<"TEST PASSED"<<endl;
+    }else{
+        cout<<"FAILED!"<<endl;
+    }
+    
+    #endif
+    
+    cout<<010<<endl;
+    cout<<011<<endl;
+    cout<<001<<endl;
+    cout<<02<<endl;
+    cout<<03<<endl;
+    cout<<020<<endl;
+    cout<<0x10<<endl;
+    
+        
+    
+    return 0;
+}
+
+
+
+// print 1...100
+// every multiple 3 print 'smart' 
+// every multiple 5 print 'clip'
+// 
+// other numbers.. 
+
+/*
+1
+2
+3 smart
+4 
+5 clip
+6 smart
+15 smartclip
+*/
+
+
+
+
+
+
+
+
+
+
