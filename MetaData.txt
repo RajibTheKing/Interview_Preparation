@@ -13,32 +13,29 @@
 	-> Online Assesment
 	-> Online Assesment Done
 
-	
+
 3. Amazon (Software Engineer| EMEA GES)
 	-> Applied
 	-> Online Assesment same which was for AWS
-	-> PS Interview on : Tuesday, Jul 28, 2022 from 4:30pm - 5:30pm 
+	-> PS Interview on : Tuesday, Jul 28, 2022 from 4:30pm - 5:30pm
 	-> Live Coding Interview on : Fri, Jul 1, 2022 from 8:00pm - 9:00pm
 	-> Live Coding Passed (email Response on: 4th July, 2022)
 	-> Final Interview: 3rd August + 4th August (5 hour interview)
-	
-	
-	
-	
+
 
 4. Flixbus (Backend Software Developer)
 	-> Applied through linkedin
 	-> rejected by "Alina"
 	-> Reason: Another candidate already selected for this role
-	
-5. Zalando (Fullstack Engineer) 
+
+5. Zalando (Fullstack Engineer)
 	-> Applied through linkedin
 	-> Recruiter Interview Done (13th June, 2022) Interview with Mr. German Parez
 	-> Preparing for Codility Test
 	-> Passed Codility Test
 	-> Preliminary Interview (21st June, 4:00PM-4:45PM) with Mr. Raul Fernandez Reyes
 	-> Live Coding Interview + Skill test (14th July 4:30PM-5:30PM) with Mr. Raul Fernandez Reyes
-	
+
 
 6. Audibene Gmbh(Full Stack Engineer)
 	-> Applied through linkedin
@@ -47,7 +44,7 @@
 
 7. Realtimeboard Inc (Full Stack Engineer)
 	-> Applied through Linkedin
-	
+
 8. Miro (Full Stack Engineer)
 	-> Applied through Linkedin
 	-> Applied 30th May, 2022
@@ -57,113 +54,113 @@
 9. TUI
 	-> Applied through Linkedin, 31st May, 2022
 	-> pass: n54)n,B/Fh6&9Ab
-	
+
 10. ZeissGroup
 	-> https://zeissgroup.wd3.myworkdayjobs.com/en-US/External/userHome
 	-> Role: Backend Software Engineer
 	-> Applied: 1st June, 2022
-	-> Rejected: 10 June, 2022 	
+	-> Rejected: 10 June, 2022
 
 11. EA sports
 	-> https://ea.gr8people.com/index.gp?method=cappPortal.showActivityThankYou&opportunityid=173843&syslayoutid=227&actionWorkflowId=539767&SMID=1000725
 	-> Pass: HelloWorld123$
 	-> Applied
 	-> Rejected
-	
+
 12. Revolut
 	-> Applied: 31st May, 2022
 	-> Rejected: 2nd June, 2022
-	
+
 13. GMV
 	-> Applied
-	
+
 14. New Relic
 	-> Role: Full-Stack Engineer
 	-> Applied: 31st May, 2022
 	-> Rejected: 9th June, 2022
-	
+
 15. T-Systems Multimedia Solutions
 	-> Applied: 29th May, 2022
 	-> Rejected : 7th June, 2022
-	
+
 16. Momox (Full Stack Engineer)
 	-> Applied: 9th June, 2022
 	-> Rejected: 10th June, 2022
-	
+
 17. N26
 	-> Applied: 9th June, 2022
 	-> Rejected: 20th June, 2022
-	
+
 18. Rewe (Java Software Engineer)
 	-> Applied: 10th June, 2022
 	-> Rejected: 17th June, 2022
-	
+
 19. Bolt (Senior Software Engineer)
 	-> Applied: 10th June, 2022
 	-> PS Interview on Tue Jul 5, 2022 10:30am – 11am
 	-> July 6th, Maiia Lakovleva transfered my Application for Full-Stack
 	-> 12 days no corresponding Email from Bolt.
-	-> July 18th 2022, Wrote an email to Maiia to get current Status of my Application. 
-	
-	
+	-> July 18th 2022, Wrote an email to Maiia to get current Status of my Application.
+
+
 20. Twilio (Software Engineer)
 	-> Applied: 10th June, 2022
 	-> Rejected: 14th June, 2022
-	
+
 21. Modis
-	-> Recruter knocked me 
-	-> Initial Interview 20th June, 2022 4:00 PM 
-	
+	-> Recruter knocked me
+	-> Initial Interview 20th June, 2022 4:00 PM
+
 22. Ottobock
 	-> Applied
-	
+
 23. Quantcast
 	-> Applied
-	-> Recruiter Interview: 30th June, 2022 5:00 PM - 5:30 PM 
+	-> Recruiter Interview: 30th June, 2022 5:00 PM - 5:30 PM
 	-> rejected--> Reason: skillset doesn't match.. They need Staff Engineer
 
-24. Skoove 
+24. Skoove
 	-> Role: (Junior/Mid-level Fullstack Software)
 	-> Applied( 30th June, 2022)
 	-> PS Interview 5 July, 2022 -- 5:00 PM - 5:30 PM
-	
+
 25. Global Savings Group
 	-> Role: Full-Stack Software Engineer
 	-> Link: https://join.com/companies/global-savings-group/4985977-full-stack-software-engineer-m-f-d
 	-> Applied( 30th June, 2022)
 	-> Applied (12th July, 2022) No Idea, how I applied again.
-	
-26. Wikimedia Deutschland 
+
+26. Wikimedia Deutschland
 	-> Role: Software Engineer
 	-> Link: https://wikimedia-deutschland.softgarden.io/applications?5&l=en
 	-> Applied( 30th June, 2022)
-	
-	
-27. SmartRecruiters Inc 
+
+
+27. SmartRecruiters Inc
 	-> Role: Software Engineer, Python
 	-> Link: https://www.smartr.me/my-jobs/my-applications?pageOpenedSource=Bar
 	-> Applied( 30th June, 2022)
 	-> Rejected
-	
-28. AVIV group 
+
+28. AVIV group
 	-> Role: Software Engineer - Fullstack
 	-> Linke:https://www.smartr.me/my-jobs/my-applications?jobCardId=c34928f2-57b6-414f-a66a-b02c7471fcac&pageOpenedSource=HomePage
 	-> Applied( 30th June, 2022)
 	-> Rejected
-	
+
 29. SystemIQ
 	-> Role: Software Engineer - Fullstack
 	-> Applied( 22th June, 2022)
 	-> Rejected (5th July, 2022)
-	
+
 30. HiveStreaming
 	-> Role: Software Engineer
 	-> Rees Price, Recruiter knocked me in linked in (14th July, 2022)
 	-> Recruiter Call: 6:00 PM-6:30PM (14th July, 2022)
 	-> Initial Interview with Claudio Di Cosmo (18th July, 2022) 5:30PM - 6:00 PM
-	
+
 31. Spotify
-	-> Role: Full-Stack Engineer 
+	-> Role: Full-Stack Engineer
 	-> Applied: (16th July, 2022)
 
 
@@ -174,37 +171,37 @@
 33. Yelp
 	-> Role: Software Engineer - Application Backend
 	-> Applied: 16th July, 2022
-	
+
 34. Visa
 	-> Role: Software Engineer - Backend
-	-> Applied: 2nd July, 2022 
-	-> Rejected: 15th July, 2022 
+	-> Applied: 2nd July, 2022
+	-> Rejected: 15th July, 2022
 
 35. Triple A Internetshops
 	-> Role: Software Engieer - PHP Backend
-	-> Applied: 15th July, 2022 
-	
-36. Oda 
+	-> Applied: 15th July, 2022
+
+36. Oda
 	-> Role: Software Engieer
-	-> Applied: 18th July, 2022 
-	
+	-> Applied: 18th July, 2022
+
 37. Soundcloud:
-	-> Role: Software Engineer 
-	-> Applied: 18th July, 2022 
+	-> Role: Software Engineer
+	-> Applied: 18th July, 2022
 
 38. BCG Digital Ventures
-	-> Role: Fullstack Engineer 
+	-> Role: Fullstack Engineer
 	-> Applied: 18th July, 2022
 	-> Rejected: 19th July, 2022
-	
+
 39. Amadeus FiRe
 	-> Role: C++ Softwareentwickler / Software Developer (m/w/d)
 	-> Applied: 18th July, 2022
-	
+
 40. Trendyol Group
-	-> Role: Software Engineer 
+	-> Role: Software Engineer
 	-> Applied: 19th July, 2022
-	
+
 41. SmartClip
 	-> Role: Software Engineer (C++)
 	-> Applied: 19th July, 2022
@@ -214,18 +211,18 @@
 	-> Applied: 20th July, 2022
 
 43. Flatiron Health
-	-> Role: Software Engineer 
+	-> Role: Software Engineer
 	-> Applied: 20th July, 2022
 	-> Rejected: 21st July, 2022
 
 44. LuxSoft
 	-> Role: C++ Software Engineer
 	-> Applied: 20th July, 2022
-	
+
 45. Spendesk
 	-> Role: Software Engineer
 	-> Applied: 21st July, 2022
-	
+
 46. Rasa
 	-> Role: Software Engineer
 	-> Applied: 21st July, 2022
@@ -239,8 +236,4 @@
 	-> Applied: 22nd June, 2022
 	-> Rejected: 4th July, 2022
 
-
-	
-	
-	
 https://app.codility.com/cert/view/certGMFNVB-8U4CK847SVJRQFKN/

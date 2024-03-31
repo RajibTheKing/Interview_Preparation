@@ -1,0 +1,53 @@
+/* */
+
+What are the functionalities of the books store?
+- As a user -> I should be able to search for a book and order the same
+- As a seller -> I should be able to add new books to my ccatalogue
+- As a seller -> I should get notified when someone buys my book
+- As an admin -> I need metrics on which books are being sold the most
+- As a user -> I should have an account.
+
+How many total users I have to suppport?
+- 200 million users
+- 1 million sellers
+
+How many daily active users?
+- 10 million users
+
+how many books ? //scale it afterwards
+
+Do I need to implement Payment service? Or third party
+
+
+Book : {
+    book_id,
+    author_name,
+    book_name,
+    description,
+    image_url,
+}
+
+                                                update/add/delete/view      [redis]        [Amazon s3]
+[Sellers] ---------[LB]---------- [Book Management Service (Web servers)] ------------>  [NoSQL] - BookDB
+                                             |                                            |
+                                             |                                            |
+                                [Notification Service (Weberservs)]             [Search Service]---->[Search Service]
+                                                                                  [elastic search]
+
+[users] -----------[LB]----------[]
+
+
+Solution -> SearchService
+-> APIS: 
+1. add_new_books(List[Book])
+2. remove_books(List[Book])
+3. search_book(Query) -> List[Book]
+4. re_validate_after_add()
+5. re_validate_after_remove()
+
+BookMangement(List[Book], int operation){
+    //add new books 
+    //update the BookDB
+    re_validate_after_add(books);
+    
+}

@@ -4,84 +4,95 @@
 #include <algorithm>
 using namespace std;
 
-class Transcoder{
+class Transcoder
+{
 public:
-    virtual void EncodeToH264(char *inData, char *outData) = 0;
-    virtual void EncodeToVP8(char *inData, char *outData) = 0;
-    virtual void DecodeToH264(char *inData, char *outData) = 0;
-    virtual void DecodeToVP8(char *inData, char *outData) = 0;
+    virtual void EncodeToH264(char* inData, char* outData) = 0;
+    virtual void EncodeToVP8(char* inData, char* outData) = 0;
+    virtual void DecodeToH264(char* inData, char* outData) = 0;
+    virtual void DecodeToVP8(char* inData, char* outData) = 0;
 };
 
 
 
 
-class Vehicle : public Transcoder {
+class Vehicle : public Transcoder
+{
 public:
     //default Constructor
-    Vehicle(){
-
+    Vehicle()
+    {
         numberOfWheels = 4;
         type = "Earth";
     }
-    Vehicle(int wheels, string t){
+
+    Vehicle(int wheels, string t)
+    {
         numberOfWheels = wheels;
         type = t;
     }
 
-    void EncodeToH264(char *inData, char *outData){
+    void EncodeToH264(char* inData, char* outData)
+    {
 
     }
 
-    void EncodeToVP8(char *inData, char *outData){
+    void EncodeToVP8(char* inData, char* outData)
+    {
 
     }
 
-    void DecodeToH264(char *inData, char *outData){
+    void DecodeToH264(char* inData, char* outData){
 
     }
 
 private:
     int numberOfWheels;
     string type;
-
-    
 };
 
-class Car : public Vehicle{
+class Car : public Vehicle
+{
 public:
-    Car(int wheels, string t, string m) : Vehicle(wheels, t){
+    Car(int wheels, string t, string m) : Vehicle(wheels, t)
+    {
         model = m;
     }
 private:
     string model;
 };
 
-class Coordinate{
+class Coordinate
+{
 public:
     //constructor
-    Coordinate(int a, int b){
+    Coordinate(int a, int b)
+    {
         x = a;
         y = b;
     }
 
     //method
-    int getX(){
+    int getX()
+    {
         return x;
     }
 
-    int getY(){
+    int getY()
+    {
         return y;
     }
 
-    void setX(int a){
+    void setX(int a)
+    {
         x = a;
     }
 
-    void setY(int b){
+    void setY(int b)
+    {
         y = b;
     }
 
-    
 private:
     int x;
     int y;

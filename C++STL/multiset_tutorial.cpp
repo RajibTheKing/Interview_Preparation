@@ -6,37 +6,46 @@
 using namespace std;
 
 template < class T, class U>
-void print_multiset(multiset<T, U> currentSet){
-    for(const auto item : currentSet){
-        cout<<item<<endl;
+void print_multiset(multiset<T, U> currentSet)
+{
+    for (const auto item : currentSet)
+    {
+        cout << item << endl;
     }
 }
 
-class Person{
+class Person
+{
 public:
     string Name;
     int Age;
 
-    Person(string _name, int _age){
+    Person(string _name, int _age)
+    {
         Name = _name;
         Age = _age;
     }
 
-    Person& operator = (const Person &other) {
+    Person& operator = (const Person& other)
+    {
         Name = other.Name;
         Age = other.Age;
         return *this;
     }
 
-    bool operator < (const Person &rhs) const {
-        if(Age == rhs.Age){
+    bool operator < (const Person& rhs) const
+    {
+        if (Age == rhs.Age)
+        {
             return Name < rhs.Name;
         }
         return Age < rhs.Age;
     }
 
-    bool operator > (const Person &rhs) const {
-        if(Age == rhs.Age){
+    bool operator > (const Person& rhs) const
+    {
+        if (Age == rhs.Age)
+        {
             return Name > rhs.Name;
         }
         return Age > rhs.Age;
@@ -45,17 +54,18 @@ public:
 };
 
 
-ostream& operator << (ostream &out, const Person &item) {
+ostream& operator << (ostream& out, const Person& item)
+{
     out << "Name: " << item.Name << ", Age: " << item.Age;
     return out;
 }
 
 int main()
 {
-    cout<<"\nTesting C++STL multiset for Integer: "<<endl;
-    cout<<"-------------------------------------------"<<endl;
+    cout << "\nTesting C++STL multiset for Integer: " << endl;
+    cout << "-------------------------------------------" << endl;
 
-    multiset<int, less<int>> set_integer = {5,4,6,7,9};
+    multiset<int, greater<int>> set_integer = {5,4,6,7,9};
     set_integer.insert(11);
     print_multiset(set_integer);
 
@@ -80,15 +90,14 @@ int main()
     set_Person.insert(Person("ridwan", 35));
     print_multiset(set_Person);
 
-    
     cout<<"\nTesting C++STL multiset erase, loop until empty: "<<endl;
     cout<<"-------------------------------------------"<<endl;
-    while(!set_Person.empty()){
+    while(!set_Person.empty())
+    {
         Person youngestPerson = *set_Person.begin();
         cout<<"Youngest Person = "<< youngestPerson <<endl;
         set_Person.erase(youngestPerson);
     }
 
-    
     return 0;
 }

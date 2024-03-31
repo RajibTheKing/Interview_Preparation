@@ -1,0 +1,161 @@
+Reference Link: https://github.com/AnthonyCalandra/modern-cpp-features/tree/master
+
+C++11:
+-----------------------------
+- Features:
+    - move semantics:
+        - Moving an object means to transfer ownership of some resource it manages to another object.
+        - The first benefit of move semantics is performance optimization.
+        - When an object is about to reach the end of its lifetime, either because it's a temporary or by explicitly calling std::move, a move is often a cheaper way to transfer resources.
+        - For example, moving a std::vector is just copying some pointers and internal state over to the new vector
+
+    - auto
+        - typed variables are deduced by the compiler according to the type of their initializer.
+        - Extremely useful for readability, especially for complicated types.
+        - Functions can also deduce the return type using auto.
+
+    - lambda expression
+        - A lambda is an unnamed function object capable of capturing variables in scope.
+        - It features: a capture list; an optional set of parameters with an optional trailing return type; and a body.
+        - [] - captures nothing.
+        - [=] - capture local objects (local variables, parameters) in scope by value.
+        - [&] - capture local objects (local variables, parameters) in scope by reference.
+        - [this] - capture this by reference.
+        - [a, &b] - capture objects 'a' by value, 'b' by reference.
+        - example: auto getXRef = [&]() -> int& { return x; };
+
+    - decltype
+        - decltype is an operator which returns the declared type of an expression passed to it.
+        - int a = 1; // `a` is declared as type `int`
+        - decltype(a) b = a; // `decltype(a)` is `int`
+        - const int& c = a; // `c` is declared as type `const int&`
+        - decltype(c) d = a; // `decltype(c)` is `const int&`
+
+    - nullptr
+        - C++11 introduces a new null pointer type designed to replace C's NULL macro.
+        - void foo(int);
+        - void foo(char*);
+        - foo(NULL); // error -- ambiguous
+        - foo(nullptr); // calls foo(char*)
+
+    - constexpr
+        - Constant expressions are expressions that are possibly evaluated by the compiler at compile-time.
+        - example: constexpr int square(int x) {  return x * x;}
+
+    - ranged-based loop idioms
+        - Syntactic sugar for iterating over a container's elements.
+        - std::array<int, 5> a {1, 2, 3, 4, 5};
+        - for (int& x : a) x *= 2;
+
+    - noexcept specifier
+        - The noexcept specifier specifies whether a function could throw exceptions. It is an improved version of throw().
+        - void func1() noexcept;        // does not throw
+        - Declaring a function noexcept helps optimizers by reducing the number of alternative execution paths.
+        - It also speeds up the exit after failure.
+        - The keyword noexcept serves two purposes (like most of the language, really): It's an instruction to the compiler, and it's also helpful to humans who are reading the code.
+
+- Library:
+    - std::move (performing a move is nothing more than casting to an rvalue reference)
+    - std::forward (std::forward helps to implement perfect forwarding. This mechanism implies that objects passed to the function as lvalue expressions should be copied, and objects passed to the function as rvalue expressions should be moved.)
+    - std::thread
+    - smart pointers (std::unique_ptr, std::shared_ptr, std::weak_ptr. std::auto_ptr)
+        - std::unique_ptr is a non-copyable, movable pointer that manages its own heap-allocated memory.
+        - A std::shared_ptr is a smart pointer that manages a resource that is shared across multiple owners. A shared pointer holds a control block which has a few components such as the     managed object and a reference counter.
+        - std::weak_ptr is a smart pointer that holds a non-owning ("weak") reference to an object that is managed by std::shared_ptr.
+    - std::array
+
+
+
+C++14:
+-----------------------------
+- Features:
+    - binary literals:
+        - Binary literals provide a convenient way to represent a base-2 number.
+        - It is possible to separate digits with '.
+        - 0b110 // == 6
+        - 0b1111'1111 // == 255
+
+    - Generic lambda expressions:
+        - C++14 now allows the auto type-specifier in the parameter list, enabling polymorphic lambdas.
+        - auto identity = [](auto x) { return x; };
+        - int three = identity(3); // == 3
+        - std::string foo = identity("foo"); // == "foo"
+
+    - Lambda capture initializers:
+        - This allows creating lambda captures initialized with arbitrary expressions
+        - The name given to the captured value does not need to be related to any variables in the enclosing scopes and introduces a new name inside the lambda body.
+        - int factory(int i) { return i * 10; }
+        - auto f = [x = factory(2)] { return x; }; // returns 20
+
+    - Return type deduction
+        - Using an auto return type in C++14, the compiler will attempt to deduce the type for you.
+
+    - decltype(auto)
+
+    - Variable templates:
+        - C++14 allows variables to be templated:
+        - template<class T>
+        - constexpr T pi = T(3.1415926535897932385);
+        - template<class T>
+        - constexpr T e  = T(2.7182818284590452353);
+
+    - [[deprecated]] attribute
+        - C++14 introduces the [[deprecated]] attribute to indicate that a unit (function, class, etc.) is discouraged and likely yield compilation warnings.
+        - If a reason is provided, it will be included in the warnings.
+        - [[deprecated]]
+        - void old_method();
+        - [[deprecated("Use new_method instead")]]
+        - void legacy_method();
+
+- Library:
+    - User-defined literals for standard library types
+    - std::integer_sequence (Compile-time integer sequences)
+    - std::make_unique
+
+
+
+
+C++17:
+-----------------------------
+- Features:
+    - Template argument deduction for class templates
+    - Declaring non-type template parameters with auto
+    - Folding expressions
+    - New rules for auto deduction from braced-init-list
+    - constexpr lambda
+    - Lambda capture this by value
+    - Inline variables
+    - Nested namespaces
+    - Structured bindings
+    - Selection statements with initializer
+    - constexpr if
+    - UTF-8 character literals
+    - Direct list initialization of enums
+    - [[fallthrough]], [[nodiscard]], [[maybe_unused]] attributes
+    - __has_include
+    - Class template argument deduction
+- Library:
+    - std::variant
+    - std::optional
+    - std::string_view
+    - std::any
+    - std::invoke
+    - std::apply
+    - std::filesystem
+    - std::byte
+    - std::sample
+    - std::clamp
+    - std::not_fn
+    - std::to_chars
+    - std::from_chars
+
+
+
+
+
+
+
+cout<<011
+
+
+

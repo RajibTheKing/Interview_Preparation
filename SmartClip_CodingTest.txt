@@ -20,23 +20,19 @@ std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec)
 
 
 vector<string> printNumbers(int range){
-    
     vector<string> ret;
-    
-    for(int i = 1; i <= range; i++){
+    for(int i = 1; i <= range; i++)
+    {
         string str = "";
         stringstream ss;
         ss<<i;
         ss>>str;
-        
         if(i % 3 == 0 || i % 5 == 0){
             str+=" ";
         }
-        
         if(i % 3 == 0){
             str+= "smart";
         }
-        
         if(i % 5 == 0){
             str+= "clip";
         }
@@ -54,9 +50,9 @@ bool Test_printNumbers(){
     expected.push_back("4");
     expected.push_back("5 clip");
     expected.push_back("6 smart");
-    
+
     vector<string> actual = printNumbers(samepleParams);
-    
+
     if(actual.size() != expected.size()) return false;
     for(unsigned int i=0; i<expected.size(); i++)
     {
@@ -65,9 +61,9 @@ bool Test_printNumbers(){
             return false;
         }
     }
-    
+
     return true;
-    
+
 }
 
 int main()
