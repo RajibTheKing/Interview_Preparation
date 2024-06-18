@@ -1,0 +1,1 @@
+CodingChallenge.rar needs to be put into a folder and extracted to work properly

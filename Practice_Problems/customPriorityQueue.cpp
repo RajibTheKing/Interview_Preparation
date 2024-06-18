@@ -4,9 +4,11 @@
 using namespace std;
 
 
-class Compare{
+class Compare
+{
 public:
-    bool operator()(const int &current, const int &other){
+    bool operator () (const int& current, const int& other)
+    {
         //return current > other; //min heap
         return current < other; //max heap
 
@@ -25,12 +27,11 @@ int main()
     pq.push(6);
     pq.push(3);
 
-    while(!pq.empty()){
-        cout<<pq.top()<<endl;
+    while(!pq.empty())
+    {
+        cout << pq.top() << endl;
         pq.pop();
     }
-
-
 
     return 0;
 }

@@ -1,18 +1,33 @@
 Dear Concern,
 
-I am interested in the position Senior Node.js Developer (m/f/d). I am looking for a job close to Hamburg.
+I am interested in the position Fullstack web developer*in / web developer*in (m/f/d).
 
-I have more than 3 years of experience as a full stack developer on following skills:
- - Node.js,
- - TypeScript,
- - Vuejs,
- - SQL,
- - No-SQL
-
-Moreover, I have total 10+ years of experience in software development with many tech stacks.
+I have total 9+ years of experience in software development with many tech stacks.
 Over the course of my career, I have worked with a lot of challenging projects. Please check out my resume to get a brief overview about my work.
 
-If you have any questions, please do not hesitate to contact me. I am looking forward to hearing from you.
+Furthermore, I have 3 years of experience as a full stack developer on the following skills:
+ - Node.js,
+ - Express.js
+ - JavaScript
+ - TypeScript,
+ - Python
+ - Go
+ - Vue.js,
+ - SQL,
+ - No-SQL
+ - REST + GraphQL
+ - Prisma
+ - Docker
+
+I believe, I can be a great asset to the team. If you have any questions, please do not hesitate to contact me. I am looking forward to hearing from you.
 
 With kind regards,
 Rajib
+
+
+
+Dear Concern,
+I am actively looking for a new job as a software engineer. I have 9+ years of experience in developing different types of software products.
+I am attaching my CV here. Please let me know if there are any opportunities available for me. Thank you.
+Best Regards,
+Rajib Chandra Das

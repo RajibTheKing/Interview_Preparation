@@ -35,7 +35,7 @@ int main()
     if(sentence.find("i") != string::npos){
         cout<<sentence.find("i")<<endl;
     }
-    
+
     return 0;
 }
 

@@ -7,11 +7,13 @@ using namespace std;
 int count_bits_naive(long long v)
 {
     int bit_count = 0;
-    for(int i=0; i<64; i++){
+    for(int i=0; i<64; i++)
+    {
 
         unsigned long long mask = (1ULL << i);
         //cout<<v<<", "<<mask<<", "<<(v & mask)<<", "<<i<<endl;
-        if(v & mask){
+        if(v & mask)
+        {
             bit_count++;
         }
 
@@ -57,16 +59,14 @@ int main()
 {
 
     long long totalCount = 0;
-    for(int i=0; i<100; i++){
+    for (int i = 0; i < 100; i++)
+    {
         long long v = i;
         int ans = count_bits_optimized(v);
-        totalCount+=ans;
-        cout<<i<<", "<<totalCount<<", "<<((log10(i)/log10(2)) - ans)<<endl;
+        totalCount += ans;
+        cout << i << ", " << totalCount << ", " << ((log10(i)/log10(2)) - ans) << endl;
     }
 
-    cout<<"Final Answer: "<<totalCount<<endl;
-
-
+    cout << "Final Answer: "<< totalCount << endl;
     return 0;
-
 }
