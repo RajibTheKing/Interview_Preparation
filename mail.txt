@@ -1,0 +1,28 @@
+Hello Itir Volkan,
+
+I am really happy to get a response from Digital Turbine. Here in this email, I want to put the information about some of your concerns:
+
+C++ Experience:
+    - Server side solution managing audio video call, Transcoding if needed. (at Eyeball Networks)
+    - Cross-Platform Software Development Kit development to process audio video data. (at IPvision)
+    - worked on Digital Advertising solution, mostly optimized functionalities (at Smartclip)
+Overall, I have 6+ years of professional experience on C++
+
+Go Experience:
+    - developed one service of No Code Platform Solution (Research Project) based on microservice architechture (at Wobe Systems)
+I have more or less 1 years of professional experience on Go
+
+Notice Period:
+    - I can start immediately, my last job ended on 31st May 2024.
+
+Relocation:
+    - Currently I am staying in Kiel. I have a plan to relocate to Berlin.
+    - I am mostly interested on remote option for at-least first 6 months/3 months of probation period and then permanantly shift to Berlin.
+
+Expected Salary:
+    - 60000 Euro / Year
+
+Please, knock me anytime if you want to know any more information. Thank you.
+
+Best Regards,
+Rajib Chandra Das
