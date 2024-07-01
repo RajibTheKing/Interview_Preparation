@@ -6,7 +6,7 @@ public:
         for(int i=0; i<triangle.size(); i++)
             for(int j=0; j<triangle[i].size(); j++)
                 dp[i][j] = INT_MAX;
-    
+
         return solve(0, 0, triangle);
     }
 
