@@ -1,9 +1,8 @@
 from collections import deque
 
 class ColorPuzzle:
-    def __init__(self, n, m, g):
-        self.n = n
-        self.m = m
+    def __init__(self, g):
+        self.n = len(g)
         self.grid = g
         self.direction = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 

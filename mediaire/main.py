@@ -8,7 +8,7 @@ def main():
     grid = gridCreator.create_grid(n, m)
     gridCreator.print_grid(grid)
 
-    colorPuzzle = ColorPuzzle(n, m, grid)
+    colorPuzzle = ColorPuzzle(grid)
     grid, selection, moves = colorPuzzle.play()
     print("Answer: ", selection, moves)
 
