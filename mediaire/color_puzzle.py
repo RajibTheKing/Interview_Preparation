@@ -6,14 +6,17 @@ class ColorPuzzle:
         self.grid = g
         self.direction = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
+    # total complexity = O(n x n) x [ O(n x n) + O(m logm) + O(m) + O (n x n) ] -> O(n^4) + O(n^2 m logm)
+    # now m < n, therefore O(n^4) is the complexity of whole process
     def play(self):
         totalColorSelected = 0
         selection = []
+        # for each cell, O (n x n) if every cell is assigned to unique different color
         while not self.finished():
-            chosen_color = self.select_next_color()
+            chosen_color = self.select_next_color() # Complexity: O(n x n) + O(m logm) + O(m)
             totalColorSelected += 1
             print(f"Selected Color --> {chosen_color}, Selection no --> {totalColorSelected}:")
-            self.start_fill(chosen_color)
+            self.start_fill(chosen_color) # Complexity: O(n x n)
             selection.append(chosen_color)
 
             for row in self.grid:
@@ -21,6 +24,7 @@ class ColorPuzzle:
 
         return (self.grid, selection, totalColorSelected)
 
+    # each cell is accessed only once, in worst case complexity = O(n x n)
     def start_fill(self, next_color):
         origin_color = self.grid[0][0]
         self.grid[0][0] = next_color
@@ -37,6 +41,7 @@ class ColorPuzzle:
                     self.grid[nx][ny] = next_color
                     queue.append((nx, ny))
 
+    # each cell is accessed only once, in worst case complexity = O(n x n) + O(m logm) + O(m)
     def select_next_color(self):
         origin_color = self.grid[0][0]
         queue = deque([(0,0)])
@@ -78,12 +83,15 @@ class ColorPuzzle:
         # select the color with the maximum count
         max_count = 0
         sorted_dict = dict(sorted(color_counter.items()))
+        # O(mlogm)
 
         # let's assume lower color value as lower rank, that will help breaking tie
         for key in sorted_dict.keys():
             if color_counter[key] > max_count:
                 max_count = color_counter[key]
                 selected_color = key
+
+        |# O(m)
 
         print(f"\n\nSelected Color --> {selected_color}, with count --> {color_counter[selected_color]}")
         return selected_color
