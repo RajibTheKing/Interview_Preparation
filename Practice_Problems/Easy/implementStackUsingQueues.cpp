@@ -4,13 +4,12 @@ public:
     queue<int> q2;
 
     MyStack() {
-        
     }
-    
+
     void push(int x) {
         q1.push(x);
     }
-    
+
     int pop() {
         int lastValue;
         while(q1.size() != 1)
@@ -18,7 +17,6 @@ public:
             lastValue = q1.front(); q1.pop();
             q2.push(lastValue);
         }
-        
         lastValue = q1.front();
         q1.pop();
 
