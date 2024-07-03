@@ -12,12 +12,11 @@ Go Experience:
     - developed one service of No Code Platform Solution (Research Project) based on microservice architechture (at Wobe Systems)
 I have more or less 1 years of professional experience on Go
 
+JavaScript/TypeScript Experience:
+    - developed project, workflow management web application named 'Pushbox'
+
 Notice Period:
     - I can start immediately, my last job ended on 31st May 2024.
-
-Relocation:
-    - Currently I am staying in Kiel. I have a plan to relocate to Berlin.
-    - I am mostly interested on remote option for at-least first 6 months/3 months of probation period and then permanantly shift to Berlin.
 
 Expected Salary:
     - 60000 Euro / Year

@@ -91,7 +91,7 @@ class ColorPuzzle:
                 max_count = color_counter[key]
                 selected_color = key
 
-        |# O(m)
+        # O(m)
 
         print(f"\n\nSelected Color --> {selected_color}, with count --> {color_counter[selected_color]}")
         return selected_color
