@@ -1,0 +1,5 @@
+*You may need to run 'pip install tkinter' to make sure the calculator can run
+
+Please run with the latest version of Python (python.org)
+
+Disabling your AV may also help prevent false errors
