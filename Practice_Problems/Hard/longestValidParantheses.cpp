@@ -1,7 +1,7 @@
 class Solution {
 public:
-    int longestValidParentheses(string s) {
-        
+    int longestValidParentheses(string s) 
+    {
         return maxValidParantheses(0, s);
     }
 
