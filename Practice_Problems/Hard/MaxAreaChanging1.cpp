@@ -7,6 +7,8 @@ public:
     int largestIsland(vector<vector<int>>& grid)
     {
         memset(color, -1, sizeof(color));
+        memset(memoMarker, -1, sizeof(memoMarker));
+
         n = grid.size();
         m = grid[0].size();
         int marker = 1;
@@ -41,7 +43,7 @@ public:
                     {
                         int nx = i + dx[k];
                         int ny = j + dy[k];
-                        if (0 <= nx && nx < n && 0 <= ny && ny < m && st.find(memoMarker[nx][ny]) == st.end())
+                        if (0 <= nx && nx < n && 0 <= ny && ny < m && memoMarker[nx][ny] != -1 && st.find(memoMarker[nx][ny]) == st.end())
                         {
                             currentMax += mp[memoMarker[nx][ny]];
                             st.insert(memoMarker[nx][ny]);
