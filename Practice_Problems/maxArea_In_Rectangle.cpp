@@ -37,7 +37,6 @@ public:
 
         for (; i < heights.size(); i++)
         {
-            // cout << "Pos : " << i << ", height[i] = " << heights[i] << endl;
             if (st.empty())
             {
                 st.push(i);
@@ -54,11 +53,6 @@ public:
                     {
                         int top = st.top();
                         st.pop();
-
-                        // if(st.empty())
-                        //     cout << "      --> i = " << i << ", top = " << top << ", st.top() = empty" << endl;
-                        // else
-                        //     cout << "      --> i = " << i << ", top = " << top << ", st.top() = " << st.top() << endl;
 
                         if (st.empty())
                             area = heights[top] * i;
@@ -88,5 +82,4 @@ public:
         return maxArea;
 
     }
-
 };
