@@ -1,0 +1,77 @@
+Source: https://talentgrid.io/c-interview-questions-answers/
+
+-- What is a mutable storage class specifier? How can it be used?
+Answer: 1. auto     --> lifetime : function block
+        2. extern   --> lifetime : whole program
+        3. static   --> lifetime : whole program
+        4. register --> lifetime : function block
+        5. mutable  --> lifetime : class
+
+
+-- What are the differences between a shallow and a deep copy?
+Answer:
+    Shallow Copy: It stores the references of objects to the original memory address. Faster.
+    Deep Copy: It stores copies of the object’s value. It’s comparatively slower.
+
+-- What is an abstract class in C++?
+Answer:
+    An abstract class in C++ is referred to as the base class, which has at least one pure virtual function and is designed to be specifically used as a base class.
+
+
+-- What is the function of scope resolution operator in C++?
+Answer:
+    - It’s denoted by the double colon (::) symbol.
+    - They help to resolve the scope of various global variables.
+    - When defined outside the class, a function allows associating the function with the class.
+
+-- What is the diamond problem in C++?
+Answer:
+    as C++ allows inheritance with multiple class, this problem might occur. Here is an example:
+
+    class A {
+    public:
+        void foo() {
+            cout << "A::foo()" << endl;
+        }
+    };
+
+    class B : public A {
+    public:
+        void foo() {
+            cout << "B::foo()" << endl;
+        }
+    };
+
+    class C : public A {
+    public:
+        void foo() {
+            cout << "C::foo()" << endl;
+        }
+    };
+
+    class D : public B, public C {
+    };
+
+    int main() {
+        D d;
+        d.foo(); // Which foo() method should be called?
+        return 0;
+    }
+
+    to resolve: qualify the function calls (bit weird)
+    int main() {
+        D d;
+        d.B::foo(); // Call B::foo()
+        d.C::foo(); // Call C::foo()
+        return 0;
+    }
+
+-- What is a “translation unit” in C++?
+Answer:
+    A translation unit consists of:
+        - Contents of a source file
+        - Plus contents of files included directly or indirectly
+        - Minus source code lines ignored by any conditional preprocessing directives ( the lines ignored by #ifdef,#ifndef, etc.)
+
+
+
