@@ -73,5 +73,14 @@ Answer:
         - Plus contents of files included directly or indirectly
         - Minus source code lines ignored by any conditional preprocessing directives ( the lines ignored by #ifdef,#ifndef, etc.)
 
+-- what is "The Rule of Five" in C++?
+Answer:
+    The “Rule of  Five” is a guideline for efficient and bug-free programming in C++. The Rule of Five states that, "If any of the below functions is defined for a class, then it is better to define all of them."
+    1. Destructor
+    2. Copy Constructor
+    3. Copy Assignment Operator
+    4. Move Constructor
+    5. Move Assignment Operator
+
 
 
