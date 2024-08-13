@@ -2,7 +2,7 @@ class Solution {
 public:
     int dp[12][2][12];
 
-    int solve(string&s, int pos, int tight, int cnt)
+    int solve(string& s, int pos, int tight, int cnt)
     {
         if (pos == s.size())
             return cnt;

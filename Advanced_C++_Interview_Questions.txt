@@ -83,4 +83,11 @@ Answer:
     5. Move Assignment Operator
 
 
+-- What are different types of cast in C++?
+Answer:
+    - static_cast
+    - dynamic_cast
+    - const_cast
+    - reinterpret_cast
+    explanation: https://cplusplus.com/doc/oldtutorial/typecasting/
 
