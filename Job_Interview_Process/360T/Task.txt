@@ -1,0 +1,44 @@
+Having a Player class - an instance of this class with that can communicate with other Player(s) (other instances of this class)
+
+The use case for this task is as bellow:
+
+1. create 2 players
+
+2. one of the players should send a message to second player (let's call this player "initiator")
+
+3. when a player receives a message should send back a new message that contains the received message concatenated with the message counter that this player sent.
+
+4. finalise the program (gracefully) after the initiator sent 10 messages and received back 10 messages (stop condition)
+
+5. both players should run in the same process (strong requirement)
+
+6. document for every class the responsibilities it has.
+
+7. opposite to 5: have every player in a separate process (different PID).
+
+Please use pure/standard C++ libs (no additional frameworks like boost, no external libs, nothing to be installed on the test system, etc.).
+Please use C++17 or older version. Solution has to be delivered for Linux system, compiled with gcc.
+Please deliver one single CMake (3.XX version) project with the source code only (no binaries). Please send the CMake project as archive attached to e-mail (eventual links for download will be ignored due to security policy).
+Please provide a shell script to start the program.
+Everything what is not clearly specified is to be decided by developer. Everything what is specified is a hard requirement.
+Please focus on design and not on technology, the technology should be the simplest possible that is achieving the target.
+The focus of the exercise is to deliver the cleanest and clearest design that you can achieve (and the system has to be functional).
+
+
+Question:
+
+I have following some clarification Questions regarding this task:
+    - Approach 1: both players should run in the same process -->
+        - May I implement this by creating two std::thread, which will instantiate Player class? This way both player will run in the same process.
+        - Or, Should I think about an alternative solution?
+
+    - Approach 2: every player should run in a separate process -->
+        - Ideally, there are several solutions possible for this. In my mind, I am thinking about:
+            i) using shared memory, which is fast IPC method because processes don’t need to copy data between themselves
+            ii) using sockets, can be used for communicating two processes at the same machine
+        Possibly, other solutions available. Do you have any preference?
+
+    - Clearly, we have two completely different approach to fullfill the requirement of this task.
+        - However, I am assuming, I need to deliver after blending all the solution approaches as a single Cmake project.
+        - While running the binary, we can specify solution approach, player type etc as arguments
+        - Am I correct?
