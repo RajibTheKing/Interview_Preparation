@@ -1,0 +1,8 @@
+Question: Design a system, where user will give you an Image and a rotation Angle, your service will have to rotate this image according to the angle, and return this image back to user.
+
+What is the size of image?
+    - well it can small or it can be quite large upto 100 MB.
+
+Number of users?
+    - 1 million users
+

@@ -1,5 +1,9 @@
 Reference Link: https://github.com/AnthonyCalandra/modern-cpp-features/tree/master
 
+When to use different type of cast: https://stackoverflow.com/questions/332030/when-should-static-cast-dynamic-cast-const-cast-and-reinterpret-cast-be-used
+
+
+
 C++11:
 -----------------------------
 - Features:
