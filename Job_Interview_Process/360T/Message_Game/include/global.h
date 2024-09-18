@@ -23,6 +23,11 @@ namespace MG
         "Don't forget to take a break.",
         "Enjoy the little things in life."
     };
+
+    // Create a random number generator
+    static std::random_device rd;  // Seed the generator
+    static std::mt19937 gen(rd()); // Mersenne Twister engine
+    static std::uniform_int_distribution<> distribute(0, 10000); // Define the range
 }
 
 #endif
