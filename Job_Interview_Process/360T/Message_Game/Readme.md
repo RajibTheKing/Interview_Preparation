@@ -6,10 +6,10 @@
 #### How to run:
 
 ```
-mkdir build
-cd build
-cmake ..
-./Message_Game
+ mkdir build
+ cmake -B ./build
+ cmake --build ./build
+ ./build/Message_Game
 ```
 
 
