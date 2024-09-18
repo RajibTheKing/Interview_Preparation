@@ -3,10 +3,15 @@
 
 int main(int argc, const char **argv)
 {
-    std::cout << "Hello World" << std::endl;
+    MG::Player *player1 = new MG::Player("Alex", Role::INITIATOR);
+    MG::Player *player2 = new MG::Player("Bob", Role::ACTOR);
+    player1->startGame();
+    player2->startGame();
 
-    MG::Player *player1 = new MG::Player(Role::INITIATOR);
-    MG::Player *player2 = new MG::Player(Role::ACTOR);
-
+    // wait until both player1 and player2 finish playing
+    while (player1->isActive() || player2->isActive())
+    {
+        std::this_thread::sleep_for(2000ms);
+    }
     return 0;
 }
