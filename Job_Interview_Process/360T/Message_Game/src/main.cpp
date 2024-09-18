@@ -11,7 +11,7 @@ int main(int argc, const char **argv)
     // wait until both player1 and player2 finish playing
     while (player1->isActive() || player2->isActive())
     {
-        std::this_thread::sleep_for(2000ms);
+        std::this_thread::sleep_for(500ms);
     }
     return 0;
 }

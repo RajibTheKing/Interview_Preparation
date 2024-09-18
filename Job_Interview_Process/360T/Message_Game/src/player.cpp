@@ -28,20 +28,25 @@ namespace MG
 
     void Player::play()
     {
-        std::string fixedMsg = "this is just a msg";
         int msgCounter = 0;
         int numberOfIteration = 10;
-
         std::thread::id currentThreadId = std::this_thread::get_id();
 
-        while(msgCounter < numberOfIteration)
+        // Create a random number generator
+        std::random_device rd;  // Seed the generator
+        std::mt19937 gen(rd()); // Mersenne Twister engine
+        std::uniform_int_distribution<> distribute(0, numberOfIteration-1); // Define the range
+
+        while (msgCounter < numberOfIteration)
         {
             std::unique_lock<std::mutex> lock(mtx);
-            std::this_thread::sleep_for(1000ms);
+            std::this_thread::sleep_for(100ms);
+
+            int randomIndex = distribute(gen);
 
             if (playerRole == Role::INITIATOR)
             {
-                messageQueue.push(std::make_pair(currentThreadId, fixedMsg));
+                messageQueue.push(std::make_pair(currentThreadId, messages[randomIndex]));
                 cv.notify_one();
             }
 
