@@ -12,17 +12,27 @@ namespace MG
     static int numberOfIteration = 10;
 
     // static storage of random messages
-    static std::vector<std::string> messages = {
-        "Hello, how are you today?",
-        "What a beautiful day!",
-        "Are you ready for the weekend?",
-        "Keep smiling and stay positive.",
-        "Let's make the most of this moment.",
-        "Did you hear the latest news?",
-        "It's a great time to learn something new.",
-        "Wishing you all the best today!",
-        "Don't forget to take a break.",
-        "Enjoy the little things in life."
+    std::vector<std::string> messages = {
+        "The cat jumps over the fence.",
+        "A dog barks at the mailman.",
+        "The bird sings a beautiful song.",
+        "A child plays with a toy.",
+        "The teacher explains the lesson.",
+        "A computer processes data quickly.",
+        "The car drives down the highway.",
+        "A tree provides shade on a sunny day.",
+        "The student studies for the exam.",
+        "An artist paints a stunning landscape.",
+        "The sun rises in the east.",
+        "A chef cooks a delicious meal.",
+        "The wind blows gently through the trees.",
+        "A musician plays a captivating tune.",
+        "The flowers bloom in the spring.",
+        "A writer pens a gripping novel.",
+        "The ocean waves crash on the shore.",
+        "A firefighter saves a cat from a tree.",
+        "The clock ticks softly in the background.",
+        "A scientist conducts an important experiment."
     };
 
     // create a random number generator

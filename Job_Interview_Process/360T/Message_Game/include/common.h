@@ -35,5 +35,4 @@ namespace MG
     };
 }
 
-
 #endif

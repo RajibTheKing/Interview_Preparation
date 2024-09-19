@@ -32,7 +32,7 @@ namespace MG
 
     void Player::play_SameProcess()
     {
-        int msgCounter = 0;        
+        int msgCounter = 0;
         std::thread::id currentThreadId = std::this_thread::get_id();
 
         while (msgCounter < numberOfIteration)
@@ -48,7 +48,7 @@ namespace MG
                 cv.notify_one();
             }
 
-            cv.wait(lock, [currentThreadId]{ 
+            cv.wait(lock, [currentThreadId]{
                         return !messageQueue.empty() &&  messageQueue.front().first != currentThreadId;
                     });
 
@@ -94,7 +94,7 @@ namespace MG
                 write(fifo, messages[randomIndex].c_str(), messages[randomIndex].size() + 1);
                 close(fifo);
             }
-            
+
             // Wait for reply
             char buffer[bufferSize];
             int fifo = open(fifoPath.c_str(), O_RDONLY);

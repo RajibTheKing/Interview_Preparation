@@ -15,7 +15,7 @@ namespace MG
         }
         void startGame();
         bool isActive();
-        
+
     private:
         void play_SameProcess();
         void play_DifferentProcess();

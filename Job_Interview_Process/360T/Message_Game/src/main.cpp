@@ -6,7 +6,7 @@ Approach getSolutionApproach(const char* argument)
 {
     if (argument == "different_process"sv)
         return Approach::DIFFERENT_PROCESS;
-    
+
     // default
     return Approach::SAME_PROCESS;
 }
@@ -15,7 +15,7 @@ Role getPlayerRole(const char* argument)
 {
     if (argument == "initiator"sv)
         return Role::INITIATOR;
-    
+
     // default
     return Role::ACTOR;
 }
@@ -29,8 +29,8 @@ int main(int argc, const char **argv)
 
     if (approach == Approach::SAME_PROCESS)
     {
-        std::unique_ptr<MG::Player> player1 = std::make_unique<MG::Player>("Alex", Role::INITIATOR, approach);
-        std::unique_ptr<MG::Player> player2 = std::make_unique<MG::Player>("Bob",  Role::ACTOR,     approach);
+        std::unique_ptr<Player> player1 = std::make_unique<Player>("Alex", Role::INITIATOR, approach);
+        std::unique_ptr<Player> player2 = std::make_unique<Player>("Bob",  Role::ACTOR,     approach);
         player1->startGame();
         player2->startGame();
 
@@ -44,7 +44,7 @@ int main(int argc, const char **argv)
     {
         Role role = getPlayerRole(argv[2]);
         std::string playerName(argv[3]);
-        std::unique_ptr<MG::Player> player = std::make_unique<MG::Player>(playerName, role, approach);
+        std::unique_ptr<Player> player = std::make_unique<Player>(playerName, role, approach);
         player->startGame();
 
         while (player->isActive())
@@ -55,5 +55,4 @@ int main(int argc, const char **argv)
 
     std::cout << "\n\nMessage Game is Finished" << std::endl;
     return 0;
-    
 }
