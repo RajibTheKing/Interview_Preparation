@@ -20,17 +20,20 @@
 
 using namespace std::chrono_literals;
 using namespace std::literals;
-
-enum Role
+namespace MG
 {
-  INITIATOR,
-  ACTOR
-};
+    enum Role
+    {
+        INITIATOR,
+        ACTOR
+    };
 
-enum Approach
-{
-    SAME_PROCESS,
-    DIFFERENT_PROCESS
-};
+    enum Approach
+    {
+        SAME_PROCESS,
+        DIFFERENT_PROCESS
+    };
+}
+
 
 #endif

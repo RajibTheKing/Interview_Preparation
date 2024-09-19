@@ -1,5 +1,6 @@
 #include "common.h"
 #include "player.h"
+using namespace MG;
 
 Approach getSolutionApproach(const char* argument)
 {
@@ -23,13 +24,13 @@ int main(int argc, const char **argv)
 {
     pid_t process_id = getpid(); // Get the current process ID
     std::cout << "Current Process ID: " << process_id << std::endl;
-    
+
     Approach approach = getSolutionApproach(argv[1]);
 
     if (approach == Approach::SAME_PROCESS)
     {
-        MG::Player *player1 = new MG::Player("Alex", Role::INITIATOR, approach);
-        MG::Player *player2 = new MG::Player("Bob",  Role::ACTOR,     approach);
+        std::unique_ptr<MG::Player> player1 = std::make_unique<MG::Player>("Alex", Role::INITIATOR, approach);
+        std::unique_ptr<MG::Player> player2 = std::make_unique<MG::Player>("Bob",  Role::ACTOR,     approach);
         player1->startGame();
         player2->startGame();
 
@@ -43,8 +44,9 @@ int main(int argc, const char **argv)
     {
         Role role = getPlayerRole(argv[2]);
         std::string playerName(argv[3]);
-        MG::Player *player = new MG::Player(playerName, role, approach);
+        std::unique_ptr<MG::Player> player = std::make_unique<MG::Player>(playerName, role, approach);
         player->startGame();
+
         while (player->isActive())
         {
             std::this_thread::sleep_for(500ms);
