@@ -10,10 +10,7 @@ namespace MG
         solutionApproach = a;
         active = false;
 
-        if (playerRole == Role::INITIATOR)
-            std::cout << playerName << " is an Initiator" << std::endl;
-        else
-            std::cout << playerName << " is an Actor" << std::endl;
+        std::cout << playerName << " is an " << playerRole << std::endl;
     }
 
     void Player::startGame()

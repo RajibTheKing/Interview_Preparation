@@ -12,7 +12,7 @@ namespace MG
     static int numberOfIteration = 10;
 
     // static storage of random messages
-    std::vector<std::string> messages = {
+    static std::vector<std::string> messages = {
         "The cat jumps over the fence.",
         "A dog barks at the mailman.",
         "The bird sings a beautiful song.",
@@ -44,6 +44,12 @@ namespace MG
     static std::string fifoPath = "./build/message_fifo";
     static int mode = 0666;
     static int bufferSize = 1000;
+
+    static std::ostream& operator << (std::ostream& os, Role& obj)
+    {
+        obj == Role::INITIATOR ? os << "Initiator" : os << "Actor";
+        return os;
+    }
 
 }
 
