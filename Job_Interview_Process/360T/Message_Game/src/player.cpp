@@ -3,10 +3,11 @@
 
 namespace MG
 {
-    Player::Player(std::string name, Role r)
+    Player::Player(std::string name, Role r, Approach a)
     {
         playerName = name;
         playerRole = r;
+        solutionApproach = a;
         active = false;
 
         if (playerRole == Role::INITIATOR)
@@ -18,7 +19,10 @@ namespace MG
     void Player::startGame()
     {
         active = true;
-        new std::thread(&Player::play, this);
+        if (solutionApproach == Approach::SAME_PROCESS)
+            new std::thread(&Player::play_SameProcess, this);
+        else
+            new std::thread(&Player::play_DifferentProcess, this);
     }
 
     bool Player::isActive()
@@ -26,10 +30,9 @@ namespace MG
         return active;
     }
 
-    void Player::play()
+    void Player::play_SameProcess()
     {
-        int msgCounter = 0;
-        int numberOfIteration = 10;
+        int msgCounter = 0;        
         std::thread::id currentThreadId = std::this_thread::get_id();
 
         while (msgCounter < numberOfIteration)
@@ -53,7 +56,13 @@ namespace MG
             std::string receivedMessage = messageQueue.front().second;
             msgCounter++;
             messageQueue.pop();
-            std::cout<<"\n" << playerName << " received: " << receivedMessage << std::endl;
+
+            if (playerRole == Role::ACTOR)
+                std::cout << "\n                              ";
+            else
+                std::cout << "\n";
+
+            std::cout << "[" << playerName << " received]: " << receivedMessage << std::endl;
 
             if (playerRole == Role::ACTOR)
             {
@@ -64,4 +73,51 @@ namespace MG
 
         active = false;
     }
+
+    void Player::play_DifferentProcess()
+    {
+        int msgCounter = 0;
+
+        // create the FIFO if the player is an Initiator
+        if (playerRole == Role::INITIATOR)
+            mkfifo(fifoPath.c_str(), mode);
+
+        while (msgCounter < numberOfIteration)
+        {
+            std::this_thread::sleep_for(100ms);
+            int randomIndex = distribute(gen) % messages.size();
+
+            if (playerRole == Role::INITIATOR)
+            {
+                // Open FIFO for writing
+                int fifo = open(fifoPath.c_str(), O_WRONLY);
+                write(fifo, messages[randomIndex].c_str(), messages[randomIndex].size() + 1);
+                close(fifo);
+            }
+            
+            // Wait for reply
+            char buffer[bufferSize];
+            int fifo = open(fifoPath.c_str(), O_RDONLY);
+            read(fifo, buffer, sizeof(buffer));
+            close(fifo);
+
+            msgCounter++;
+            std::cout << "[" << playerName << " received]: " << buffer << std::endl;
+
+            if (playerRole == Role::ACTOR)
+            {
+                std::string response(buffer);
+                response += (" " + std::to_string(msgCounter));
+
+                // Open FIFO for writing
+                int fifo = open(fifoPath.c_str(), O_WRONLY);
+                write(fifo, response.c_str(), response.size() + 1);
+                close(fifo);
+            }
+
+        }
+
+        active = false;
+    }
+
 }

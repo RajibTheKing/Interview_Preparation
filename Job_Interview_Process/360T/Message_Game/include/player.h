@@ -8,7 +8,7 @@ namespace MG
     class Player
     {
     public:
-        Player(std::string name, Role role);
+        Player(std::string name, Role role, Approach a);
         ~Player()
         {
             std::cout << "Player Destructor Called" << std::endl;
@@ -17,11 +17,13 @@ namespace MG
         bool isActive();
         
     private:
-        void play();
+        void play_SameProcess();
+        void play_DifferentProcess();
 
     private:
-        Role playerRole;
         std::string playerName;
+        Role playerRole;
+        Approach solutionApproach;
         bool active;
 
     };
